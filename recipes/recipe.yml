@@ -39,12 +39,13 @@ modules:
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
-
-  - type: akmods
-    base: main # if not specified, classic "main" base is used by default
-    system76-io: true
-    install: []
     
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
+
+
+type: akmods
+base: main # if not specified, classic "main" base is used by default
+system76-io: true
+install: []
 
