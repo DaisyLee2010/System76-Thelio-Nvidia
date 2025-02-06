@@ -41,8 +41,9 @@ modules:
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: akmods
+    base: main # if not specified, classic "main" base is used by default
       install:
-        - system76-io
+      - system76-io: true
     
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
